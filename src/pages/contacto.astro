@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Contacto">
+  <Header />
+  <main class="text-center py-12 px-4">
+    <h1 class="text-3xl font-bold mb-4">Contáctanos</h1>
+    <p class="mb-6">Estamos aquí para ayudarte. Completa el formulario.</p>
+    <iframe
+      src="https://docs.google.com/forms/..."
+      class="w-full max-w-3xl mx-auto h-[80vh] border-none rounded-lg"
+      loading="lazy"
+    ></iframe>
+    <a href="/" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+      Volver al inicio
+    </a>
+  </main>
+  <Footer />
+</BaseLayout>
