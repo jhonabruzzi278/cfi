@@ -1,34 +1,27 @@
-<nav class="bg-[#1e2b47] text-white sticky top-0 z-50 w-full">
-	<div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-	  <div class="text-xl font-bold">Mi Sitio</div>
-	  <ul class="hidden md:flex space-x-6 font-medium">
-		<li><a href="#home" class="hover:underline">Inicio</a></li>
-		<li><a href="#quienes-somos" class="hover:underline">¿Quiénes Somos?</a></li>
-		<li><a href="#eventos" class="hover:underline">Eventos</a></li>
-		<li><a href="#unete" class="hover:underline">Únete</a></li>
-		<li><a href="#galeria" class="hover:underline">Galería</a></li>
-		<li><a href="#recursos" class="hover:underline">Recursos</a></li>
-		<li><a href="#conectado" class="hover:underline">Conectado</a></li>
-	  </ul>
-	  <div id="menu-toggle" class="md:hidden cursor-pointer text-2xl">☰</div>
+---
+---
+
+<nav>
+	<div class="container">
+		<div class="logo">Mi Sitio</div>
+		<ul class="desktop-menu">
+			<li><a href="#home">Inicio</a></li>
+			<li><a href="#quienes-somos">¿Quiénes Somos?</a></li>
+			<li><a href="#eventos">Eventos</a></li>
+			<li><a href="#unete">Únete</a></li>
+			<li><a href="#galeria">Galería</a></li>
+			<li><a href="#recursos">Recursos</a></li>
+			<li><a href="#conectado">Conectado</a></li>
+		</ul>
+		<div id="menu-toggle">☰</div>
 	</div>
-	<ul id="menu-mobile" class="hidden flex-col items-center gap-4 pb-4 md:hidden">
-	  <li><a href="#home">Inicio</a></li>
-	  <li><a href="#quienes-somos">¿Quiénes Somos?</a></li>
-	  <li><a href="#eventos">Eventos</a></li>
-	  <li><a href="#unete">Únete</a></li>
-	  <li><a href="#galeria">Galería</a></li>
-	  <li><a href="#recursos">Recursos</a></li>
-	  <li><a href="#conectado">Conectado</a></li>
+	<ul id="menu-mobile">
+		<li><a href="#home">Inicio</a></li>
+		<li><a href="#quienes-somos">¿Quiénes Somos?</a></li>
+		<li><a href="#eventos">Eventos</a></li>
+		<li><a href="#unete">Únete</a></li>
+		<li><a href="#galeria">Galería</a></li>
+		<li><a href="#recursos">Recursos</a></li>
+		<li><a href="#conectado">Conectado</a></li>
 	</ul>
-  
-	<script is:inline>
-	  const toggle = document.getElementById("menu-toggle");
-	  const menu = document.getElementById("menu-mobile");
-	  toggle.addEventListener("click", () => {
-		menu.classList.toggle("hidden");
-		menu.classList.toggle("flex");
-	  });
-	</script>
-  </nav>
-  
+</nav>
